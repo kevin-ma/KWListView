@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
   s.author             = { "kevin-ma" => "694999544@qq.com" }
 s.social_media_url   = "http://makaiwen.com/ios/lib"
-s.source       = { :git => "https://github.com/kevin-ma/KWListView.git" :tag=>s.version}
+s.source       = { :git => "https://github.com/kevin-ma/KWListView.git", :tag=>s.version}
   s.source_files  = "KWListView"
   s.requires_arc = true
 end
