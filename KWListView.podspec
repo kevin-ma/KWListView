@@ -11,5 +11,5 @@ s.social_media_url   = "http://makaiwen.com/"
 s.source       = { :git => "https://github.com/kevin-ma/KWListView.git", :tag=>s.version}
   s.source_files  = "KWListView"
   s.requires_arc = true
-  s.framework = 'Foundation','UIKit'
+  s.framework = 'UIKit'
 end
