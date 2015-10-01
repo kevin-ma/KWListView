@@ -13,6 +13,7 @@
 const NSInteger KWListViewCellImageTag = 694999;
 const NSInteger KWListViewCellTextTag = 694998;
 const NSInteger KWUncountTag = 694990;
+const NSInteger KWEmptyViewTag = 6949998;
 
 typedef NS_ENUM(NSInteger, KWLoadDataType) {
     KWLoadDataTypeRefresh = 1,
@@ -260,7 +261,7 @@ typedef NS_ENUM(NSInteger, KWLoadDataType) {
 
 - (void)reloadData
 {
-    if (_dataHasLoaded) {
+    if (_dataHasLoaded && !_failed) {
         _empty = _datas.count == 0;
     }
     [super reloadData];
@@ -466,7 +467,7 @@ typedef NS_ENUM(NSInteger, KWLoadDataType) {
     CGFloat height = 0;
     CGFloat first = 1000;
     for (UIView *subview in cell.contentView.subviews) {
-        if (subview.tag == KWUncountTag || subview.hidden) {
+        if (subview.tag == KWUncountTag || subview.isHidden) {
             continue;
         }
         CGFloat bottom = subview.frame.origin.y + subview.frame.size.height;
@@ -491,10 +492,14 @@ typedef NS_ENUM(NSInteger, KWLoadDataType) {
 - (UITableViewCell *)emptyCell
 {
     if (self.emptyView) {
+        self.emptyView.tag = KWEmptyViewTag;
         _emptyCell = [[UITableViewCell alloc] initWithFrame:self.bounds];
         _emptyCell.selectionStyle = UITableViewCellSelectionStyleNone;
         [_emptyCell addSubview:self.emptyView];
         return _emptyCell;
+    } else {
+        UIView *emptyView = [_emptyCell viewWithTag:KWEmptyViewTag];
+        [emptyView removeFromSuperview];
     }
     _emptyCell = [self cellWithImage:self.emptyImage text:self.emptyText cell:_emptyCell];
     _emptyCell.selectionStyle = UITableViewCellSelectionStyleNone;

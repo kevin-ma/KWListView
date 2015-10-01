@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A35FA771BBD0E4200798771 /* TestData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A35FA761BBD0E4200798771 /* TestData.plist */; settings = {ASSET_TAGS = (); }; };
+		0A35FA7A1BBD1BD400798771 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA791BBD1BD400798771 /* PlayViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0A35FA7D1BBD226700798771 /* PlayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA7C1BBD226700798771 /* PlayViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		0A35FA801BBD22B400798771 /* PlaySuccessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA7F1BBD22B400798771 /* PlaySuccessModel.m */; settings = {ASSET_TAGS = (); }; };
 		0A688EF81BBAB98B003AACE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688EF71BBAB98B003AACE6 /* main.m */; };
 		0A688EFB1BBAB98B003AACE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688EFA1BBAB98B003AACE6 /* AppDelegate.m */; };
-		0A688EFE1BBAB98B003AACE6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688EFD1BBAB98B003AACE6 /* ViewController.m */; };
-		0A688F011BBAB98B003AACE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A688EFF1BBAB98B003AACE6 /* Main.storyboard */; };
+		0A688EFE1BBAB98B003AACE6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688EFD1BBAB98B003AACE6 /* HomeViewController.m */; };
 		0A688F031BBAB98B003AACE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A688F021BBAB98B003AACE6 /* Assets.xcassets */; };
 		0A688F061BBAB98B003AACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A688F041BBAB98B003AACE6 /* LaunchScreen.storyboard */; };
 		0A688F111BBAB98C003AACE6 /* KWListViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F101BBAB98C003AACE6 /* KWListViewDemoTests.m */; };
@@ -44,13 +47,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A35FA761BBD0E4200798771 /* TestData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TestData.plist; sourceTree = "<group>"; };
+		0A35FA781BBD1BD400798771 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewController.h; sourceTree = "<group>"; };
+		0A35FA791BBD1BD400798771 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewController.m; sourceTree = "<group>"; };
+		0A35FA7B1BBD226700798771 /* PlayViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayViewCell.h; sourceTree = "<group>"; };
+		0A35FA7C1BBD226700798771 /* PlayViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayViewCell.m; sourceTree = "<group>"; };
+		0A35FA7E1BBD22B400798771 /* PlaySuccessModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaySuccessModel.h; sourceTree = "<group>"; };
+		0A35FA7F1BBD22B400798771 /* PlaySuccessModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaySuccessModel.m; sourceTree = "<group>"; };
 		0A688EF31BBAB98B003AACE6 /* KWListViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KWListViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A688EF71BBAB98B003AACE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A688EF91BBAB98B003AACE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../AppDelegate.h; sourceTree = "<group>"; };
 		0A688EFA1BBAB98B003AACE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../AppDelegate.m; sourceTree = "<group>"; };
-		0A688EFC1BBAB98B003AACE6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
-		0A688EFD1BBAB98B003AACE6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
-		0A688F001BBAB98B003AACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A688EFC1BBAB98B003AACE6 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = ../HomeViewController.h; sourceTree = "<group>"; };
+		0A688EFD1BBAB98B003AACE6 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = ../HomeViewController.m; sourceTree = "<group>"; };
 		0A688F021BBAB98B003AACE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A688F051BBAB98B003AACE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A688F071BBAB98B003AACE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -128,7 +137,6 @@
 			children = (
 				0A688F2A1BBABA41003AACE6 /* KWListView */,
 				0A688F291BBABA08003AACE6 /* Demo */,
-				0A688EFF1BBAB98B003AACE6 /* Main.storyboard */,
 				0A688F021BBAB98B003AACE6 /* Assets.xcassets */,
 				0A688F041BBAB98B003AACE6 /* LaunchScreen.storyboard */,
 				0A688F071BBAB98B003AACE6 /* Info.plist */,
@@ -141,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				0A688EF71BBAB98B003AACE6 /* main.m */,
+				0A35FA761BBD0E4200798771 /* TestData.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -168,8 +177,14 @@
 			children = (
 				0A688EF91BBAB98B003AACE6 /* AppDelegate.h */,
 				0A688EFA1BBAB98B003AACE6 /* AppDelegate.m */,
-				0A688EFC1BBAB98B003AACE6 /* ViewController.h */,
-				0A688EFD1BBAB98B003AACE6 /* ViewController.m */,
+				0A688EFC1BBAB98B003AACE6 /* HomeViewController.h */,
+				0A688EFD1BBAB98B003AACE6 /* HomeViewController.m */,
+				0A35FA781BBD1BD400798771 /* PlayViewController.h */,
+				0A35FA791BBD1BD400798771 /* PlayViewController.m */,
+				0A35FA7B1BBD226700798771 /* PlayViewCell.h */,
+				0A35FA7C1BBD226700798771 /* PlayViewCell.m */,
+				0A35FA7E1BBD22B400798771 /* PlaySuccessModel.h */,
+				0A35FA7F1BBD22B400798771 /* PlaySuccessModel.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -303,9 +318,9 @@
 			files = (
 				0A688F061BBAB98B003AACE6 /* LaunchScreen.storyboard in Resources */,
 				0A688F411BBABA41003AACE6 /* KWListViewLoading.bundle in Resources */,
+				0A35FA771BBD0E4200798771 /* TestData.plist in Resources */,
 				0A688F031BBAB98B003AACE6 /* Assets.xcassets in Resources */,
 				0A688F3B1BBABA41003AACE6 /* KWListView.bundle in Resources */,
-				0A688F011BBAB98B003AACE6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +346,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A688F3C1BBABA41003AACE6 /* KWListView.m in Sources */,
-				0A688EFE1BBAB98B003AACE6 /* ViewController.m in Sources */,
+				0A688EFE1BBAB98B003AACE6 /* HomeViewController.m in Sources */,
+				0A35FA7D1BBD226700798771 /* PlayViewCell.m in Sources */,
 				0A688EFB1BBAB98B003AACE6 /* AppDelegate.m in Sources */,
 				0A688EF81BBAB98B003AACE6 /* main.m in Sources */,
 				0A688F431BBABA41003AACE6 /* UIView+KW.m in Sources */,
+				0A35FA801BBD22B400798771 /* PlaySuccessModel.m in Sources */,
+				0A35FA7A1BBD1BD400798771 /* PlayViewController.m in Sources */,
 				0A688F3E1BBABA41003AACE6 /* KWListViewConfig.m in Sources */,
 				0A688F3F1BBABA41003AACE6 /* KWListViewFooter.m in Sources */,
 				0A688F3D1BBABA41003AACE6 /* KWListViewAdder.m in Sources */,
@@ -375,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0A688EFF1BBAB98B003AACE6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0A688F001BBAB98B003AACE6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0A688F041BBAB98B003AACE6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -480,6 +490,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KWListViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -492,6 +503,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KWListViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
