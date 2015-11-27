@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "http://makaiwen.com/"
   s.source       = { :git => "https://github.com/kevin-ma/KWListView.git", :tag=>s.version.to_s }
   s.source_files  = "KWListView/*.{h,m}"
-  s.resources = "KWListView/KWListView.bundle","KWListViewLoading.bundle"
+  s.resources = "KWListView/KWListView.bundle","KWListView/KWListViewLoading.bundle"
   s.requires_arc = true
   s.framework = 'UIKit','Foundation'
 end
