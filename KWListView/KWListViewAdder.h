@@ -10,8 +10,8 @@
 
 @interface KWListViewAdder : UIView
 {
-    UIEdgeInsets _scrollViewOriginalInset;
-    __weak UIScrollView *_scrollView;
+    UIEdgeInsets _tableViewOriginalInset;
+    __weak UITableView *_tableView;
 }
 
 @property (copy, nonatomic) void (^refreshingBlock)();

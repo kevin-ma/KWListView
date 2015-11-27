@@ -10,7 +10,7 @@
 #import "KWListViewConfig.h"
 #import "UIView+KW.h"
 #import <objc/message.h>
-#import "UIScrollView+KW.h"
+#import "UITableView+KW.h"
 
 @interface KWListViewHeader ()
 /** 显示上次刷新时间的标签 */
@@ -122,26 +122,26 @@
 {
     if (self.state != KWListViewHeaderStateRefreshing) {
         // 在刷新过程中，跳转到下一个控制器时，contentInset可能会变
-        _scrollViewOriginalInset = _scrollView.contentInset;
+        _tableViewOriginalInset = _tableView.contentInset;
     }
     
     // 在刷新的 refreshing 状态，动态设置 content inset
     if (self.state == KWListViewHeaderStateRefreshing ) {
-        if(_scrollView.contentOffset.y >= -_scrollViewOriginalInset.top ) {
-            _scrollView.kw_insetT = _scrollViewOriginalInset.top;
+        if(_tableView.contentOffset.y >= -_tableViewOriginalInset.top ) {
+            _tableView.kw_insetT = _tableViewOriginalInset.top;
         } else {
-            _scrollView.kw_insetT = MIN(_scrollViewOriginalInset.top + self.kw_h,
-                                        _scrollViewOriginalInset.top - _scrollView.contentOffset.y);
+            _tableView.kw_insetT = MIN(_tableViewOriginalInset.top + self.kw_h,
+                                        _tableViewOriginalInset.top - _tableView.contentOffset.y);
         }
         return;
     }
     
-    CGFloat offsetY = _scrollView.kw_offsetY;
-    CGFloat happenOffsetY = - _scrollViewOriginalInset.top;
+    CGFloat offsetY = _tableView.kw_offsetY;
+    CGFloat happenOffsetY = - _tableViewOriginalInset.top;
 
     if (offsetY >= happenOffsetY) return;
     CGFloat normal2pullingOffsetY = happenOffsetY - self.kw_h;
-    if (_scrollView.isDragging) {
+    if (_tableView.isDragging) {
         self.pullingPercent = (happenOffsetY - offsetY) / self.kw_h;
         
         if (self.state == KWListViewHeaderStateIdle && offsetY < normal2pullingOffsetY) {
@@ -259,7 +259,7 @@
 
                 [UIView animateWithDuration:KWRefreshSlowAnimationDuration delay:0.0 options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState animations:^{
 
-                    _scrollView.kw_insetT -= self.kw_h;
+                    _tableView.kw_insetT -= self.kw_h;
                 } completion:nil];
             }
             break;
@@ -268,10 +268,10 @@
         case KWListViewHeaderStateRefreshing: {
             [UIView animateWithDuration:KWRefreshFastAnimationDuration delay:0.0 options:UIViewAnimationOptionAllowUserInteraction|UIViewAnimationOptionBeginFromCurrentState animations:^{
 
-                CGFloat top = _scrollViewOriginalInset.top + self.kw_h;
-                _scrollView.kw_insetT = top;
+                CGFloat top = _tableViewOriginalInset.top + self.kw_h;
+                _tableView.kw_insetT = top;
                 
-                _scrollView.kw_offsetY = - top;
+                _tableView.kw_offsetY = - top;
             } completion:^(BOOL finished) {
                 if (self.refreshingBlock) {
                     self.refreshingBlock();

@@ -14,7 +14,7 @@
 
 @property (assign, nonatomic) UIEdgeInsets scrollViewOriginalInset;
 
-@property (weak, nonatomic) UIScrollView *scrollView;
+@property (weak, nonatomic) UITableView *tableView;
 @end
 
 @implementation KWListViewAdder
@@ -38,9 +38,9 @@
         [newSuperview addObserver:self forKeyPath:KWRefreshContentOffset options:NSKeyValueObservingOptionNew context:nil];
         self.kw_w = newSuperview.kw_w;
         self.kw_x = 0;
-        self.scrollView = (UIScrollView *)newSuperview;
-        self.scrollView.alwaysBounceVertical = YES;
-        self.scrollViewOriginalInset = self.scrollView.contentInset;
+        self.tableView = (UITableView *)newSuperview;
+        self.tableView.alwaysBounceVertical = YES;
+        self.scrollViewOriginalInset = self.tableView.contentInset;
     }
 }
 

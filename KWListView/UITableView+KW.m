@@ -1,17 +1,17 @@
 //
-//  UIScrollView+KW.m
+//  UITableView+KW.m
 //  KWListViewDemo
 //
 //  Created by kevin on 15/5/17.
 //  Copyright (c) 2015年 kevin. All rights reserved.
 //
 
-#import "UIScrollView+KW.h"
+#import "UITableView+KW.h"
 #import "KWListViewFooter.h"
 #import "KWListViewHeader.h"
 #import <objc/runtime.h>
 
-@implementation UIScrollView (KW)
+@implementation UITableView (KW)
 - (void)setKw_insetT:(CGFloat)kw_insetT
 {
     UIEdgeInsets inset = self.contentInset;
@@ -110,7 +110,7 @@
 
 @end
 
-@implementation UIScrollView (list)
+@implementation UITableView (list)
 
 - (KWListViewHeader *)addHeaderWithRefreshingBlock:(void (^)())block
 {

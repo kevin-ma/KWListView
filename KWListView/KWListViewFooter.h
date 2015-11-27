@@ -8,8 +8,8 @@
 #import "KWListViewAdder.h"
 
 typedef enum {
-    KWListViewFooterStateIdle = 1, // 普通闲置状态
-    KWListViewFooterStateRefreshing, // 正在刷新中的状态
+    KWListViewFooterStateIdle = 1, // 闲置状态
+    KWListViewFooterStateRefreshing, // 正在刷新
     KWListViewFooterStateNoMoreData // 所有数据加载完毕，没有更多的数据了
 } KWListViewFooterState;
 

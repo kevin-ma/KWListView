@@ -1,5 +1,5 @@
 //
-//  UIScrollView+KW.h
+//  UITableView+KW.h
 //  KWListViewDemo
 //
 //  Created by kevin on 15/5/17.
@@ -12,7 +12,7 @@
 @class KWListViewHeader;
 @class KWListViewFooter;
 
-@interface UIScrollView (KW)
+@interface UITableView (KW)
 @property (assign, nonatomic) CGFloat kw_insetT;
 @property (assign, nonatomic) CGFloat kw_insetB;
 @property (assign, nonatomic) CGFloat kw_insetL;
@@ -26,7 +26,7 @@
 
 @end
 
-@interface UIScrollView (List)
+@interface UITableView (List)
 
 #pragma mark - 访问下拉刷新控件
 /** 下拉刷新控件 */

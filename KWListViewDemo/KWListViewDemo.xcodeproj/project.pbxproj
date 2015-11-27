@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A35FA771BBD0E4200798771 /* TestData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A35FA761BBD0E4200798771 /* TestData.plist */; settings = {ASSET_TAGS = (); }; };
-		0A35FA7A1BBD1BD400798771 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA791BBD1BD400798771 /* PlayViewController.m */; settings = {ASSET_TAGS = (); }; };
-		0A35FA7D1BBD226700798771 /* PlayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA7C1BBD226700798771 /* PlayViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		0A35FA801BBD22B400798771 /* PlaySuccessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA7F1BBD22B400798771 /* PlaySuccessModel.m */; settings = {ASSET_TAGS = (); }; };
+		0A35FA771BBD0E4200798771 /* TestData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A35FA761BBD0E4200798771 /* TestData.plist */; };
+		0A35FA7A1BBD1BD400798771 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA791BBD1BD400798771 /* PlayViewController.m */; };
+		0A35FA7D1BBD226700798771 /* PlayViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA7C1BBD226700798771 /* PlayViewCell.m */; };
+		0A35FA801BBD22B400798771 /* PlaySuccessModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A35FA7F1BBD22B400798771 /* PlaySuccessModel.m */; };
 		0A688EF81BBAB98B003AACE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688EF71BBAB98B003AACE6 /* main.m */; };
 		0A688EFB1BBAB98B003AACE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688EFA1BBAB98B003AACE6 /* AppDelegate.m */; };
 		0A688EFE1BBAB98B003AACE6 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688EFD1BBAB98B003AACE6 /* HomeViewController.m */; };
@@ -18,15 +18,15 @@
 		0A688F061BBAB98B003AACE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A688F041BBAB98B003AACE6 /* LaunchScreen.storyboard */; };
 		0A688F111BBAB98C003AACE6 /* KWListViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F101BBAB98C003AACE6 /* KWListViewDemoTests.m */; };
 		0A688F1C1BBAB98C003AACE6 /* KWListViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F1B1BBAB98C003AACE6 /* KWListViewDemoUITests.m */; };
-		0A688F3B1BBABA41003AACE6 /* KWListView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A688F2B1BBABA41003AACE6 /* KWListView.bundle */; settings = {ASSET_TAGS = (); }; };
-		0A688F3C1BBABA41003AACE6 /* KWListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F2D1BBABA41003AACE6 /* KWListView.m */; settings = {ASSET_TAGS = (); }; };
-		0A688F3D1BBABA41003AACE6 /* KWListViewAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F2F1BBABA41003AACE6 /* KWListViewAdder.m */; settings = {ASSET_TAGS = (); }; };
-		0A688F3E1BBABA41003AACE6 /* KWListViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F311BBABA41003AACE6 /* KWListViewConfig.m */; settings = {ASSET_TAGS = (); }; };
-		0A688F3F1BBABA41003AACE6 /* KWListViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F331BBABA41003AACE6 /* KWListViewFooter.m */; settings = {ASSET_TAGS = (); }; };
-		0A688F401BBABA41003AACE6 /* KWListViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F351BBABA41003AACE6 /* KWListViewHeader.m */; settings = {ASSET_TAGS = (); }; };
-		0A688F411BBABA41003AACE6 /* KWListViewLoading.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A688F361BBABA41003AACE6 /* KWListViewLoading.bundle */; settings = {ASSET_TAGS = (); }; };
-		0A688F421BBABA41003AACE6 /* UIScrollView+KW.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F381BBABA41003AACE6 /* UIScrollView+KW.m */; settings = {ASSET_TAGS = (); }; };
-		0A688F431BBABA41003AACE6 /* UIView+KW.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F3A1BBABA41003AACE6 /* UIView+KW.m */; settings = {ASSET_TAGS = (); }; };
+		0A688F3B1BBABA41003AACE6 /* KWListView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A688F2B1BBABA41003AACE6 /* KWListView.bundle */; };
+		0A688F3C1BBABA41003AACE6 /* KWListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F2D1BBABA41003AACE6 /* KWListView.m */; };
+		0A688F3D1BBABA41003AACE6 /* KWListViewAdder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F2F1BBABA41003AACE6 /* KWListViewAdder.m */; };
+		0A688F3E1BBABA41003AACE6 /* KWListViewConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F311BBABA41003AACE6 /* KWListViewConfig.m */; };
+		0A688F3F1BBABA41003AACE6 /* KWListViewFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F331BBABA41003AACE6 /* KWListViewFooter.m */; };
+		0A688F401BBABA41003AACE6 /* KWListViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F351BBABA41003AACE6 /* KWListViewHeader.m */; };
+		0A688F411BBABA41003AACE6 /* KWListViewLoading.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A688F361BBABA41003AACE6 /* KWListViewLoading.bundle */; };
+		0A688F421BBABA41003AACE6 /* UITableView+KW.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F381BBABA41003AACE6 /* UITableView+KW.m */; };
+		0A688F431BBABA41003AACE6 /* UIView+KW.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A688F3A1BBABA41003AACE6 /* UIView+KW.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,8 +81,8 @@
 		0A688F341BBABA41003AACE6 /* KWListViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWListViewHeader.h; sourceTree = "<group>"; };
 		0A688F351BBABA41003AACE6 /* KWListViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWListViewHeader.m; sourceTree = "<group>"; };
 		0A688F361BBABA41003AACE6 /* KWListViewLoading.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KWListViewLoading.bundle; sourceTree = "<group>"; };
-		0A688F371BBABA41003AACE6 /* UIScrollView+KW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+KW.h"; sourceTree = "<group>"; };
-		0A688F381BBABA41003AACE6 /* UIScrollView+KW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+KW.m"; sourceTree = "<group>"; };
+		0A688F371BBABA41003AACE6 /* UITableView+KW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+KW.h"; sourceTree = "<group>"; };
+		0A688F381BBABA41003AACE6 /* UITableView+KW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+KW.m"; sourceTree = "<group>"; };
 		0A688F391BBABA41003AACE6 /* UIView+KW.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+KW.h"; sourceTree = "<group>"; };
 		0A688F3A1BBABA41003AACE6 /* UIView+KW.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+KW.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,8 +204,8 @@
 				0A688F341BBABA41003AACE6 /* KWListViewHeader.h */,
 				0A688F351BBABA41003AACE6 /* KWListViewHeader.m */,
 				0A688F361BBABA41003AACE6 /* KWListViewLoading.bundle */,
-				0A688F371BBABA41003AACE6 /* UIScrollView+KW.h */,
-				0A688F381BBABA41003AACE6 /* UIScrollView+KW.m */,
+				0A688F371BBABA41003AACE6 /* UITableView+KW.h */,
+				0A688F381BBABA41003AACE6 /* UITableView+KW.m */,
 				0A688F391BBABA41003AACE6 /* UIView+KW.h */,
 				0A688F3A1BBABA41003AACE6 /* UIView+KW.m */,
 			);
@@ -357,7 +357,7 @@
 				0A688F3F1BBABA41003AACE6 /* KWListViewFooter.m in Sources */,
 				0A688F3D1BBABA41003AACE6 /* KWListViewAdder.m in Sources */,
 				0A688F401BBABA41003AACE6 /* KWListViewHeader.m in Sources */,
-				0A688F421BBABA41003AACE6 /* UIScrollView+KW.m in Sources */,
+				0A688F421BBABA41003AACE6 /* UITableView+KW.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +492,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KWListViewDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuimianba.KWListViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,7 +505,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = KWListViewDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cuimianba.KWListViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

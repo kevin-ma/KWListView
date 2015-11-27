@@ -7,7 +7,7 @@
 
 #import "KWListViewFooter.h"
 #import "KWListViewConfig.h"
-#import "UIScrollView+KW.h"
+#import "UITableView+KW.h"
 #import "KWListViewHeader.h"
 #import "UIView+KW.h"
 #import <objc/message.h>
@@ -41,8 +41,9 @@
         UIButton *loadMoreButton = [[UIButton alloc] init];
         loadMoreButton.backgroundColor = [UIColor clearColor];
         [loadMoreButton addTarget:self action:@selector(buttonClick) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:_loadMoreButton = loadMoreButton];
+        [self addSubview:loadMoreButton];
         loadMoreButton.userInteractionEnabled = NO;
+        _loadMoreButton = loadMoreButton;
     }
     return _loadMoreButton;
 }
@@ -97,10 +98,10 @@
         [newSuperview addObserver:self forKeyPath:KWRefreshPanState options:NSKeyValueObservingOptionNew context:nil];
         
         self.kw_h = KWRefreshFooterHeight;
-        _scrollView.kw_insetB += self.kw_h;
+        _tableView.kw_insetB += self.kw_h;
         [self adjustFrameWithContentSize];
     } else {
-        _scrollView.kw_insetB -= self.kw_h;
+        _tableView.kw_insetB -= self.kw_h;
     }
 }
 
@@ -111,13 +112,13 @@
     
     if (self.state == KWListViewFooterStateIdle) {
         if ([keyPath isEqualToString:KWRefreshPanState]) {
-            if (_scrollView.panGestureRecognizer.state == UIGestureRecognizerStateEnded) {// 手松开
-                if (_scrollView.kw_insetT + _scrollView.kw_contentSizeH <= _scrollView.kw_h - 10) {  // 不够一个屏幕
-                    if (_scrollView.kw_offsetY > - _scrollView.kw_insetT) { // 向上拽
+            if (_tableView.panGestureRecognizer.state == UIGestureRecognizerStateEnded) {// 手松开
+                if (_tableView.kw_insetT + _tableView.kw_contentSizeH <= _tableView.kw_h - 10) {  // 不够一个屏幕
+                    if (_tableView.kw_offsetY > - _tableView.kw_insetT) { // 向上拽
                         [self beginRefreshing];
                     }
                 } else {
-                    if (_scrollView.kw_offsetY > _scrollView.kw_contentSizeH + _scrollView.kw_insetB - _scrollView.kw_h) {
+                    if (_tableView.kw_offsetY > _tableView.kw_contentSizeH + _tableView.kw_insetB - _tableView.kw_h) {
                         [self beginRefreshing];
                     }
                 }
@@ -139,8 +140,8 @@
 {
     if (self.kw_y == 0) return;
     
-    if (_scrollView.kw_insetT + _scrollView.kw_contentSizeH > _scrollView.kw_h) {
-        if (_scrollView.kw_offsetY > _scrollView.kw_contentSizeH - _scrollView.kw_h + self.kw_h * self.appearencePercentTriggerAutoRefresh + _scrollView.kw_insetB - self.kw_h) {
+    if (_tableView.kw_insetT + _tableView.kw_contentSizeH > _tableView.kw_h) {
+        if (_tableView.kw_offsetY > _tableView.kw_contentSizeH - _tableView.kw_h + self.kw_h * self.appearencePercentTriggerAutoRefresh + _tableView.kw_insetB - self.kw_h) {
             [self beginRefreshing];
         }
     }
@@ -148,7 +149,7 @@
 
 - (void)adjustFrameWithContentSize
 {
-    self.kw_y = _scrollView.kw_contentSizeH;
+    self.kw_y = _tableView.kw_contentSizeH;
 }
 
 - (void)buttonClick
@@ -165,9 +166,9 @@
     [weakSelf.willExecuteBlocks addObject:^{
         if (!lastHidden && hidden) {
             weakSelf.state = KWListViewFooterStateIdle;
-            _scrollView.kw_insetB -= h;
+            _tableView.kw_insetB -= h;
         } else if (lastHidden && !hidden) {
-            _scrollView.kw_insetB += h;
+            _tableView.kw_insetB += h;
             
             [weakSelf adjustFrameWithContentSize];
         }

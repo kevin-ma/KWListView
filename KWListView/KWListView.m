@@ -6,7 +6,7 @@
 //  创建时间：15/5/18
 
 #import "KWListView.h"
-#import "UIScrollView+KW.h"
+#import "UITableView+KW.h"
 #import "KWListViewConfig.h"
 #import "KWListViewFooter.h"
 

@@ -24,7 +24,6 @@
 #import <UIKit/UIKit.h>
 #import "KWListViewConfig.h"
 #import "KWListViewHeader.h"
-#import "UIScrollView+KW.h"
 
 /**
  *  自动计算高度时，将视图tag设置为此值，则自动计算高度时忽略此视图
