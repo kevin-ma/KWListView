@@ -46,7 +46,6 @@
     KWListView *listView = [[KWListView alloc] initWithFrame:self.view.bounds];
     listView.delegate = self;
     listView.dataSource = self;
-    
     listView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     listView.tableFooterView = [[UIView alloc] init];
     

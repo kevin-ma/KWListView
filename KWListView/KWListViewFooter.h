@@ -23,12 +23,9 @@ typedef enum {
 
 @property (assign, nonatomic) KWListViewFooterState state;
 
-
-@property (assign, nonatomic, getter=isAutomaticallyRefresh) BOOL automaticallyRefresh;
-
+@property (assign, nonatomic, getter = isAutomaticallyRefresh) BOOL automaticallyRefresh;
 
 @property (assign, nonatomic) CGFloat appearencePercentTriggerAutoRefresh;
-
 
 @property (strong, nonatomic) UIColor *textColor;
 

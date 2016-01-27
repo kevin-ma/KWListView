@@ -13,14 +13,19 @@
 #import "UITableView+KW.h"
 
 @interface KWListViewHeader ()
+
 /** 显示上次刷新时间的标签 */
 @property (weak, nonatomic) UILabel *updatedTimeLabel;
+
 /** 上次刷新时间 */
 @property (strong, nonatomic) NSDate *updatedTime;
+
 /** 显示状态文字的标签 */
 @property (weak, nonatomic) UILabel *stateLabel;
+
 /** 所有状态对应的文字 */
 @property (strong, nonatomic) NSMutableDictionary *stateTitles;
+
 
 /** 所有状态对应的动画图片 */
 @property (strong, nonatomic) NSMutableDictionary *stateImages;
