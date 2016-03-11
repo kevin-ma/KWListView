@@ -93,7 +93,7 @@
 // PS: 高度自动计算仅在cell由类方法实现有效，请参考下面所用的cell类
 //- (CGFloat)listView:(KWListView *)listView heightForRow:(NSInteger)row
 
-// KWListView 自动计算行数机制，可以不写，默认请求成功返回数量
+// KWListView 自动计算行数机制，可以不写，默认请求成功返回数据量
 //- (NSInteger)listViewHasNumberOfRows:(KWListView *)listView
 
 - (UITableViewCell *)listView:(KWListView *)listView cellForRow:(NSInteger)row
@@ -119,7 +119,7 @@
 {
     if (sender.isOn) {
         UILabel *label = [[UILabel alloc] initWithFrame:self.view.bounds];
-        label.text = @"这就是我自定义的加载数据为空的页面了，你可以自己随便设计，假象向self.view中添加视图一样设计尺寸和位置。";
+        label.text = @"这就是我自定义的加载数据为空的页面了，你可以自己随便设计，像向self.view中添加视图一样设计尺寸和位置。";
         label.textAlignment = NSTextAlignmentCenter;
         label.font = [UIFont systemFontOfSize:14];
         label.textColor = [UIColor redColor];

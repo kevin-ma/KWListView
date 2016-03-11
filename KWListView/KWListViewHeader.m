@@ -35,6 +35,7 @@
 @end
 
 @implementation KWListViewHeader
+
 #pragma mark - 懒加载
 - (NSMutableDictionary *)stateTitles
 {
@@ -95,17 +96,19 @@
 {
     [super layoutSubviews];
     
-    // 设置自己的位置
     self.kw_y = - self.kw_h;
     
-    // 2个标签都隐藏
     CGRect rect = self.bounds;
-    rect = CGRectMake(rect.size.width * 0.5 - (67 * 0.5) * 0.5, 20, 67 * 0.5, 41 * 0.5);
-//    rect.size.height = 58 * 0.5 * 0.7;
-//    rect.size.width = 96 *.5 * 0.7;
-//    rect.origin.y = 0.25 * rect.size.height;
+    UIImage *image = [self.stateImages[@(KWListViewHeaderStateIdle)] lastObject];
+    if (!image) {
+        self.gifView.frame = rect;
+        return;
+    }
+    CGSize imageSize = image.size;
+    NSInteger power = [UIScreen mainScreen].bounds.size.width > 750 ? 3 : 2;
+    imageSize = CGSizeMake(imageSize.width * power, imageSize.height * power);
+    rect = CGRectMake(rect.size.width * 0.5 - (imageSize.width * 0.5) * 0.5, 20, imageSize.width * 0.5, imageSize.height * 0.5);
     self.gifView.frame = rect;
-//    self.gifView.contentMode = UIViewContentModeScaleAspectFit;
 }
 
 #pragma mark - 私有方法
@@ -192,8 +195,6 @@
     return self.state == KWListViewHeaderStateRefreshing;
 }
 
-
-
 #pragma mark - 懒加载
 - (NSMutableDictionary *)stateImages
 {
@@ -211,7 +212,6 @@
     }
     return _gifView;
 }
-
 
 #pragma mark - 公共方法
 #pragma mark 设置状态
@@ -292,8 +292,6 @@
         default:
             break;
     }
-
-    
 }
 
 - (void)setPullingPercent:(CGFloat)pullingPercent
@@ -323,5 +321,6 @@
     if (image.size.height > self.kw_h) {
         self.kw_h = image.size.height;
     }
+    [self layoutIfNeeded];
 }
 @end

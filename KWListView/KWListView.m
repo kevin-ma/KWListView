@@ -55,6 +55,7 @@ typedef NS_ENUM(NSInteger, KWLoadDataType) {
         [self setValue:[UIColor colorWithRed:1.000 green:0.000 blue:0.000 alpha:0.760] forKey:@"multiselectCheckmarkColor"];
         self.delegate = (id<KWListViewDelegate>)self;
         self.dataSource = (id<KWListViewDataSource>)self;
+        self.tableFooterView = [[UIView alloc] init];
         _hasDataSource = NO;
         _hasSuperView = NO;
         _bottomMargin = -1;
@@ -586,4 +587,6 @@ typedef NS_ENUM(NSInteger, KWLoadDataType) {
     }
     return NO;
 }
+
 @end
+
